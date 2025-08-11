@@ -1,0 +1,52 @@
+<!--
+    Example Website to redirect via html from https://tomato6966.github.io/finanzwissen to https://tomato6966.github.io/finanzielle_bildung/
+    Basically this repository spins up a github.io/finanzwissen page, and this html file, which will be loaded, will redirect to github.io/finanzielle_buildung
+-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; URL='https://tomato6966.github.io/finanzielle_bildung/'" />
+    <title>Redirecting...</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            background-color: #121212; 
+            color: #e0e0e0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5rem; 
+            line-height: 1.4;
+            max-width: 600px;
+            padding: 0 1rem;
+        }
+
+        a {
+            color: #bb86fc; 
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        a:hover,
+        a:focus {
+            color: #3700b3; 
+            outline: none;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Wenn Sie nicht automatisch weitergeleitet werden, 
+        <a href="https://tomato6966.github.io/finanzielle_bildung/">klicken Sie bitte hier</a>.
+    </p>
+</body>
+</html>
