@@ -1,76 +1,35 @@
-# GitHub Pages Redirect Repository
+# FinanzWissen – Redirect Repository
 
-This repository is designed to automatically redirect the GitHub Pages URL
-
-https://tomato6966.github.io/finanzwissen/   -->    https://tomato6966.github.io/finanzielle_bildung/
-
----
-
-## How it works
-
-- The page under `/finanzwissen/` performs a redirect to `/finanzielle_bildung/` using an HTML meta refresh tag.
-- The redirect page is styled with a dark mode theme for a modern and pleasant look.
-- If the automatic redirect does not work, a clickable link is provided.
+This is **only** a redirect repository for GitHub Pages.  
+It automatically forwards visitors to the main **FinanzWissen** project website.
 
 ---
 
-## Repository structure
+## ℹ Project Info
 
-- `public/index.html`  
-  The HTML redirect file with the dark mode styling, located in the repository root.
-
-- `.github/workflows/deploy-redirect.yml`  
-  The GitHub Actions workflow that deploys the contents of the `public` folder to the `gh-pages` branch upon every push to `main`.
+- **Main repository**: [Tomato6966/FinanzWissen](https://github.com/Tomato6966/FinanzWissen)  
+- **Main website**: [https://tomato6966.github.io/finanzwissen/](https://tomato6966.github.io/finanzwissen/)
 
 ---
 
-## Deployment
-
-### Prerequisites
-
-- GitHub Pages is enabled and configured to serve from the `gh-pages` branch.
-
-### Workflow process
-
-1. When you push to the `main` branch, the workflow runs automatically.
-2. The `public` folder is deployed to the `gh-pages` branch.
-3. GitHub Pages updates and serves the redirect page at  
-   `https://tomato6966.github.io/finanzwissen/`.
+## 📌 Purpose of this Repo
+- GitHub Pages allows one **unique sub-URL per repository** for each user account.  
+- This repo contains a simple `index.html` file that instantly redirects to the main website.  
+- Benefit: Visitors who access an old website or a website alias will be redirected directly to the correct site — without the need for a backend — e.g., `https://tomato6966.github.io/finanzwissen/`.
 
 ---
 
-## Customization
-
-- You can edit the target URL in `index.html` by changing the `meta refresh` content attribute.
-- Feel free to customize the styles within `index.html` (dark mode colors, font sizes, etc.).
-
----
-
-## Example index.html (Dark Mode)
-
-```html
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; URL='https://tomato6966.github.io/finanzielle_bildung/'" />
-    <title>Redirecting...</title>
-</head>
-<body>
-    <p>
-        If you are not redirected automatically,  
-        <a href="https://tomato6966.github.io/finanzielle_bildung/">click here</a>.
-    </p>
-</body>
-</html>
-```
+## 🛠 Structure
+- `public/index.html` → contains an HTML meta refresh redirect.
+- `.github/workflows/deploy-redirect.yml` → GitHub Actions workflow that automatically deploys to GitHub Pages.
 
 ---
 
-## Contact
-
-If you have any questions or issues, feel free to open an issue or contact me directly.
+## 🚀 Deployment
+Every push to the `main` branch triggers the **Deploy to GitHub Pages** workflow.  
+The site will be available within a few seconds at the redirect URL mentioned above.
 
 ---
 
-**Good luck with your GitHub Pages redirect!**
+## 📝 License
+This redirect setup is freely available under the MIT license. No warranty provided.
